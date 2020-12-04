@@ -1,0 +1,12 @@
+while :
+do
+	clear
+	echo "         Now:     Max in runtime:"
+	echo "-Core 2: $(cat /sys/module/coretemp/drivers/platform:coretemp/coretemp.0/hwmon/hwmon0/temp2_input)    $(cat /sys/module/coretemp/drivers/platform:coretemp/coretemp.0/hwmon/hwmon0/temp2_max)"
+	echo "-Core 3: $(cat /sys/module/coretemp/drivers/platform:coretemp/coretemp.0/hwmon/hwmon0/temp3_input)    $(cat /sys/module/coretemp/drivers/platform:coretemp/coretemp.0/hwmon/hwmon0/temp3_max)"
+	echo "-Core 4: $(cat /sys/module/coretemp/drivers/platform:coretemp/coretemp.0/hwmon/hwmon0/temp4_input)    $(cat /sys/module/coretemp/drivers/platform:coretemp/coretemp.0/hwmon/hwmon0/temp4_max)"
+	echo "-Core 10: $(cat /sys/module/coretemp/drivers/platform:coretemp/coretemp.0/hwmon/hwmon0/temp10_input)    $(cat /sys/module/coretemp/drivers/platform:coretemp/coretemp.0/hwmon/hwmon0/temp10_max)"
+	echo "-Core 11: $(cat /sys/module/coretemp/drivers/platform:coretemp/coretemp.0/hwmon/hwmon0/temp11_input)    $(cat /sys/module/coretemp/drivers/platform:coretemp/coretemp.0/hwmon/hwmon0/temp11_max)"
+	echo "-Core 12: $(cat /sys/module/coretemp/drivers/platform:coretemp/coretemp.0/hwmon/hwmon0/temp12_input)    $(cat /sys/module/coretemp/drivers/platform:coretemp/coretemp.0/hwmon/hwmon0/temp12_max)"
+	sleep 1
+done
